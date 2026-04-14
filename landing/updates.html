@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocean Drops | Updates</title>
+    <meta
+      name="description"
+      content="Follow product updates and changelog entries for Ocean Drops."
+    />
+    <link rel="icon" type="image/png" href="./assets/app_icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./content.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html" aria-label="Ocean Drops home">
+          <img src="./assets/app_icon.png" alt="Ocean Drops app icon" class="brand-icon" />
+          <span class="brand-wordmark">Ocean Drops</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./latest-release.html">Latest Release</a></li>
+            <li><a class="active" href="./updates.html">Updates</a></li>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container page-hero-wrap panel">
+          <p class="eyebrow">Updates</p>
+          <h1>Changelog progress with clear signal.</h1>
+          <p class="lead">
+            Track how Ocean Drops continues to improve organization, reminders,
+            and shared workflows.
+          </p>
+        </div>
+      </section>
+
+      <section class="section page-body">
+        <div class="container narrow">
+          <div class="timeline" id="updates-feed" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-brand">
+          <img src="./assets/app_icon.png" alt="" aria-hidden="true" />
+          <p>© <span id="year"></span> Ocean Drops. All rights reserved.</p>
+        </div>
+        <a href="./privacy-policy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>

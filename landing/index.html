@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocean Drops | Home</title>
+    <meta
+      name="description"
+      content="Ocean Drops is a premium, calm life organizer for notes, reminders, files, links, personal information, and shared spaces."
+    />
+    <meta property="og:title" content="Ocean Drops" />
+    <meta property="og:description" content="A calm operating space for life details." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oceandrops.app" />
+    <meta property="og:image" content="https://oceandrops.app/og-image.png" />
+    <link rel="icon" type="image/png" href="./assets/app_icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./content.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html" aria-label="Ocean Drops home">
+          <img src="./assets/app_icon.png" alt="Ocean Drops app icon" class="brand-icon" />
+          <span class="brand-wordmark">Ocean Drops</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-list">
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./latest-release.html">Latest Release</a></li>
+            <li><a href="./updates.html">Updates</a></li>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Home</p>
+            <h1>A calm operating system for your personal life.</h1>
+            <p class="lead">
+              Ocean Drops helps you capture and organize notes, reminders, files,
+              links, and shared essentials in one premium experience.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="./contact.html">Get launch updates</a>
+              <a class="btn btn-secondary" href="./about.html">Learn why it exists</a>
+            </div>
+            <div class="trust-row">
+              <span>Notes + reminders</span>
+              <span>Shared spaces</span>
+              <span>Clear structure</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section examples">
+        <div class="container">
+          <p class="eyebrow">In the app</p>
+          <h2>How Ocean Drops looks in daily use</h2>
+          <p class="lead">
+            A quick look at reminders, lists, and file spaces so you can see the app in a simple, real way.
+          </p>
+          <div class="examples-grid">
+            <article class="example-card panel">
+              <img
+                src="./assets/whatsapp-example-1.jpeg"
+                alt="Ocean Drops app screenshot example."
+                loading="lazy"
+              />
+              <p>Upcoming reminders grouped by time.</p>
+            </article>
+            <article class="example-card panel">
+              <img
+                src="./assets/whatsapp-example-2.jpeg"
+                alt="Ocean Drops app screenshot example."
+                loading="lazy"
+              />
+              <p>Personal lists with folders and drops.</p>
+            </article>
+            <article class="example-card panel">
+              <img
+                src="./assets/whatsapp-example-3.jpeg"
+                alt="Ocean Drops app screenshot example."
+                loading="lazy"
+              />
+              <p>Files and documents organized in one place.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container card-grid">
+          <article class="info-card">
+            <h3>One place for what matters</h3>
+            <p>Keep important details connected instead of spread across apps.</p>
+          </article>
+          <article class="info-card">
+            <h3>Capture from real life</h3>
+            <p>Add text, checklists, files, links, photos, and locations instantly.</p>
+          </article>
+          <article class="info-card">
+            <h3>Shared without chaos</h3>
+            <p>Use invites and shared spaces to coordinate with clarity.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-brand">
+          <img src="./assets/app_icon.png" alt="" aria-hidden="true" />
+          <p>© <span id="year"></span> Ocean Drops. All rights reserved.</p>
+        </div>
+        <a href="./privacy-policy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>
