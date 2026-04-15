@@ -1,4 +1,21 @@
 const SITE_PASSWORD = "arielsagy";
+const SITE_ACCESS_STORAGE_KEY = "oceanDropsSiteAccessGranted";
+
+function hasSiteAccess() {
+  try {
+    return localStorage.getItem(SITE_ACCESS_STORAGE_KEY) === "true";
+  } catch (error) {
+    return false;
+  }
+}
+
+function grantSiteAccess() {
+  try {
+    localStorage.setItem(SITE_ACCESS_STORAGE_KEY, "true");
+  } catch (error) {
+    // Ignore storage failures and unlock only for current page lifecycle.
+  }
+}
 
 function unlockSite(gateEl) {
   document.body.classList.remove("site-locked");
@@ -27,6 +44,8 @@ function createPasswordGate() {
 }
 
 function initPasswordGate() {
+  if (hasSiteAccess()) return;
+
   document.body.classList.add("site-locked");
   const gate = createPasswordGate();
   document.body.appendChild(gate);
@@ -41,6 +60,7 @@ function initPasswordGate() {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (input.value === SITE_PASSWORD) {
+      grantSiteAccess();
       unlockSite(gate);
       return;
     }
